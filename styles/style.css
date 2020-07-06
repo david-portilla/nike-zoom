@@ -194,3 +194,101 @@ body{
 .shoeName, .description, .color-container, .size-container{
   border-bottom: 1px solid #dadada;
 }
+
+.description{
+  padding: 10px 0;
+}
+
+.title{
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.text{
+  color: #555;
+  font-size: 17px;
+}
+
+.color-container{
+  padding: 10px 0;
+}
+
+.colors{
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.color{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 5px solid;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.color[color="blue"]{
+  background-color: #2175f5;
+  border-color: #2175f5;
+}
+
+.color[color="red"]{
+  background-color: #f84848;
+  border-color: #f84848;
+}
+
+.color[color="green"]{
+  background-color: #29b864;
+  border-color: #29b864;
+}
+
+.color[color="orange"]{
+  background-color: #ff5521;
+  border-color: #ff5521;
+}
+
+.color[color="black"]{
+  background-color: #444;
+  border-color: #444;
+}
+
+.color.active{
+  border-color: #fff;
+  box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.size-container{
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.sizes{
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.size{
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #eee;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.size.active{
+  background-color: var(--primary);
+  color: #fff;
+  transition: .5s;
+}
