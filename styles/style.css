@@ -2,22 +2,18 @@
   --primary: #2175f5;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Popins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
+body{
   background-color: #efefef;
 }
 
-.shoe {
-  display: none;
-}
-
-.container {
+.container{
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,22 +22,21 @@ body {
   overflow: hidden;
 }
 
-.card {
+.card{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 860px;
 }
 
-.shoeBackground {
+.shoeBackground{
   position: relative;
   width: 50%;
   height: 475px;
-  box-shadow:
-    -15px 0 35px rgba(0, 0, 0, 0.1),
-    0 -15px 35px rgba(0, 0, 0, 0.1),
-    0 15px 35px rgba(0, 0, 0, 0.1);
-  transition: 0.5s;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+  0 -15px 35px rgba(0, 0, 0, 0.1),
+  0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: .5s;
 }
 
 .gradients{
@@ -140,6 +135,20 @@ body {
   opacity: .1;
 }
 
+.shoe{
+  position: absolute;
+  width: 140%;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-20deg);
+  transition: .5s;
+}
+
+.shoe.show{
+  opacity: 1;
+}
+
 .info{
   width: 50%;
   background-color: #fff;
@@ -148,4 +157,40 @@ body {
   box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),
   0 -15px 35px rgba(0, 0, 0, 0.1),
   0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.shoeName{
+  padding: 0 0 10px 0;
+}
+
+.shoeName div{
+  display: flex;
+  align-items: center;
+}
+
+.shoeName div .big{
+  margin-right: 10px;
+  font-size: 2rem;
+  color: #333;
+  line-height: 1;
+}
+
+.shoeName div .new{
+  background-color: var(--primary);
+  text-transform: uppercase;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.shoeName .small{
+  font-weight: 500;
+  color: #444;
+  margin-top: 3px;
+  text-transform: capitalize;
+}
+
+.shoeName, .description, .color-container, .size-container{
+  border-bottom: 1px solid #dadada;
 }
