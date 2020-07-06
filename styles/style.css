@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Popins', sans-serif;
+}
+
+body{
+  background-color: #efefef;
+}
+
+.shoe, .logo{
+  display: none;
+}
